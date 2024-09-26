@@ -25,6 +25,17 @@ CREATE TABLE staffs (
     FOREIGN KEY (store_id)  REFERENCES stores(store_id)
 );
 
+CREATE TABLE stores (
+    store_id INT PRIMARY KEY, 
+    store_name VARCHAR(255),
+    phone VARCHAR(255),
+    email VARCHAR(255),
+    street VARCHAR(255),
+    city VARCHAR(255),
+    state VARCHAR(255),
+    zip_code VARCHAR(255)
+); 
+
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
     customer_id INT, 
